@@ -48,7 +48,7 @@ print("")
 if FLAGS.eval_train:
     x_raw, ids = data_helpers.load_test_data(FLAGS.test_data_file, ftype='test')
     assert len(ids)==10000
-    print("Received", str(len(x_raw)),"test examples")
+    print("Received", str(len(x_raw)),"TEST examples")
     x_dev, y_dev = data_helpers.load_test_data(FLAGS.dev_set_file, ftype='dev')
 
 else:
@@ -105,7 +105,7 @@ y_dev = np.array(list(map(int,y_dev)))
 # Print accuracy if y_test is defined
 if y_dev is not None:
     correct_predictions = float(sum(dev_predictions == y_dev))
-    print("Total number of DEV examples: {}".format(len(y_dev)))
+    print("Number of DEV examples (data set augmentation, for tuning purposes only): {}".format(len(y_dev)))
     print("DEV ACCURACY: {:g}".format(correct_predictions/float(len(y_dev))))
 
 # Save the evaluation to a csv
