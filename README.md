@@ -42,9 +42,10 @@ Evaluation
 
 where the run-id folder is generated every train and for every
 fold in cross-validation. 
-Note: The dev error that is output is just a 
+
+Note: The dev error that is printed upon evaluation is just a 
 reference we used for tunning the model. It's an augmented data set
-used for validation where we generated some tweets with a language model.
+used for validation where we generated some tweets with a language model (http://nlp.stanford.edu/sentiment/).
 This is a common trick in deep learning.
 
 Kaggle
