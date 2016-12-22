@@ -3,10 +3,10 @@
 
 Dependencies
 ============
-> Python 3.5.2
-> tensorflow 0.12.0-rc0
-> nltk 3.2.1
-> sklearn 0.18.1
+- Python 3.5.2
+- tensorflow 0.12.0-rc0
+- nltk 3.2.1
+- sklearn 0.18.1
 
 Before running any code please make sure all data files (either
 for training or testing) you
